@@ -14,20 +14,11 @@ public class SiteToWordPO {
     @ManyToOne
     @MapsId("siteId")
     @JoinColumn(name = "site_id")
-    SitePO sitePo;
+    SitePO site;
 
     @ManyToOne
     @MapsId("wordId")
     @JoinColumn(name = "word_id")
-    WordCountPO wordCountPO;
+    WordCountPO wordCount;
 }
 
-@Data
-@Embeddable
-class SiteToWordKey implements Serializable {
-    @Column(name = "site_id")
-    Long siteId;
-
-    @Column(name = "word_id")
-    Long wordId;
-}

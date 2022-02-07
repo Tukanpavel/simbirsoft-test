@@ -13,6 +13,6 @@ public class WordCountPO {
     private Long id;
     private String word;
     private Integer count;
-    @OneToMany(mappedBy = "word_count")
+    @OneToMany(mappedBy = "wordCount")
     private Set<SiteToWordPO> sitePOs;
 }
