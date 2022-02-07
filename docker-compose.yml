@@ -1,0 +1,13 @@
+version: "3.7.0"
+
+services:
+  db:
+    image: postgres:14
+    tty: true
+    environment:
+      POSTGRES_PASSWORD: somepass
+      POSTGRES_USER: postgres
+      POSTGRES_DB: simbirsoft-test
+    restart: on-failure
+    ports:
+      - 5432:5432
