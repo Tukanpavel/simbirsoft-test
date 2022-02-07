@@ -1,11 +1,11 @@
-package com.chel.ya.parsing;
+package com.simbirsoft.test.parsing;
 
-import com.chel.ya.parsing.service.IO.ParseUrlServiceInput;
-import com.chel.ya.parsing.service.IO.ParseUrlServiceOutput;
-import com.chel.ya.parsing.base.controller.ParseUrlRequest;
-import com.chel.ya.parsing.base.controller.ParseUrlResponse;
-import com.chel.ya.parsing.base.controller.ParsingControllerRequestMapper;
-import com.chel.ya.parsing.base.controller.ParsingControllerResponseMapper;
+import com.simbirsoft.test.parsing.service.IO.ParseUrlServiceInput;
+import com.simbirsoft.test.parsing.service.IO.ParseUrlServiceOutput;
+import com.simbirsoft.test.parsing.base.controller.ParseUrlRequest;
+import com.simbirsoft.test.parsing.base.controller.ParseUrlResponse;
+import com.simbirsoft.test.parsing.base.controller.ParsingControllerRequestMapper;
+import com.simbirsoft.test.parsing.base.controller.ParsingControllerResponseMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.chel.ya.parsing.persistence.POs;
+package com.simbirsoft.test.parsing.persistence.POs;
 
 import lombok.Data;
 

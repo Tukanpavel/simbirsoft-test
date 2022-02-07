@@ -1,6 +1,6 @@
-package com.chel.ya.parsing.base.controller;
+package com.simbirsoft.test.parsing.base.controller;
 
-import com.chel.ya.parsing.base.service.ParsedWord;
+import com.simbirsoft.test.parsing.base.service.ParsedWord;
 
 import java.util.List;
 

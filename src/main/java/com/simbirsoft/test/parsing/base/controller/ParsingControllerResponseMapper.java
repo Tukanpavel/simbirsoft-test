@@ -1,6 +1,6 @@
-package com.chel.ya.parsing.base.controller;
+package com.simbirsoft.test.parsing.base.controller;
 
-import com.chel.ya.parsing.service.IO.ParseUrlServiceOutput;
+import com.simbirsoft.test.parsing.service.IO.ParseUrlServiceOutput;
 import org.springframework.stereotype.Component;
 
 @Component

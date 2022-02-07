@@ -1,6 +1,6 @@
-package com.chel.ya.parsing.base.IO.parse_url;
+package com.simbirsoft.test.parsing.base.IO.parse_url;
 
-import com.chel.ya.parsing.base.service.ParsedWord;
+import com.simbirsoft.test.parsing.base.service.ParsedWord;
 
 import java.util.List;
 

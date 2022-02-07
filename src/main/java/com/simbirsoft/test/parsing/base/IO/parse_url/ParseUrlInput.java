@@ -1,4 +1,4 @@
-package com.chel.ya.parsing.base.IO.parse_url;
+package com.simbirsoft.test.parsing.base.IO.parse_url;
 
 public class ParseUrlInput {
     private final String url;

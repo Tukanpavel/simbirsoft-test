@@ -1,4 +1,4 @@
-package com.chel.ya.parsing.base.service;
+package com.simbirsoft.test.parsing.base.service;
 
 public class ParsedWord {
     private String word;

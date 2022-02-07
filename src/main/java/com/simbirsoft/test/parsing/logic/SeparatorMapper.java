@@ -1,4 +1,4 @@
-package com.chel.ya.parsing.logic;
+package com.simbirsoft.test.parsing.logic;
 
 import org.springframework.stereotype.Component;
 

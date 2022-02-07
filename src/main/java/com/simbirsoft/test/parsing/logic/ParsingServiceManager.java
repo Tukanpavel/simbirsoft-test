@@ -1,8 +1,8 @@
-package com.chel.ya.parsing.logic;
+package com.simbirsoft.test.parsing.logic;
 
-import com.chel.ya.parsing.base.IO.parse_url.ParseUrlInput;
-import com.chel.ya.parsing.base.IO.parse_url.ParseUrlOutput;
-import com.chel.ya.parsing.base.service.ParsedWord;
+import com.simbirsoft.test.parsing.base.IO.parse_url.ParseUrlInput;
+import com.simbirsoft.test.parsing.base.IO.parse_url.ParseUrlOutput;
+import com.simbirsoft.test.parsing.base.service.ParsedWord;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;

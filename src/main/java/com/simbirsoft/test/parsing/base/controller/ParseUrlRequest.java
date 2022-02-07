@@ -1,4 +1,4 @@
-package com.chel.ya.parsing.base.controller;
+package com.simbirsoft.test.parsing.base.controller;
 
 import org.immutables.value.Value;
 
