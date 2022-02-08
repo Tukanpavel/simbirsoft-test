@@ -1,9 +1,20 @@
 package com.simbirsoft.test.parsing.base.controller;
 
-import org.immutables.value.Value;
+import lombok.Getter;
+import lombok.Setter;
 
-@Value.Immutable
-@Value.Style(jdkOnly = true)
-public interface ParseUrlRequest {
-    String getUrl();
+import javax.validation.constraints.NotNull;
+
+@Getter
+@Setter
+public class ParseUrlRequest {
+    @NotNull
+    private String url;
+
+    public ParseUrlRequest() {
+    }
+
+    public ParseUrlRequest(String url) {
+        this.url = url;
+    }
 }
