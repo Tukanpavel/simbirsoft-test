@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@Table(name = "_site_to_word")
 public class SiteToWordPO {
     @EmbeddedId
     SiteToWordKey id;
@@ -18,6 +19,8 @@ public class SiteToWordPO {
     @ManyToOne
     @MapsId("wordId")
     @JoinColumn(name = "word_id")
-    WordCountPO wordCount;
+    WordPO wordCount;
+
+    Integer count;
 }
 

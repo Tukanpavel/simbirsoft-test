@@ -1,10 +1,10 @@
 package com.simbirsoft.test.parsing.persistence.POs;
 
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Set;
-
 
 @Data
 @Entity
@@ -13,9 +13,8 @@ public class SitePO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column
     private String url;
+    private LocalDateTime createdAt;
     @OneToMany(mappedBy = "site")
     private Set<SiteToWordPO> wordCountPO;
-
 }

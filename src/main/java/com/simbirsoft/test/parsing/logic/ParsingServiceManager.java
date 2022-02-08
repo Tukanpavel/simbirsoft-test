@@ -3,6 +3,7 @@ package com.simbirsoft.test.parsing.logic;
 import com.simbirsoft.test.parsing.base.IO.parse_url.ParseUrlInput;
 import com.simbirsoft.test.parsing.base.IO.parse_url.ParseUrlOutput;
 import com.simbirsoft.test.parsing.base.service.ParsedWord;
+import com.simbirsoft.test.parsing.persistence.creator.SiteToWordCreator;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ import java.util.stream.Collectors;
 public class ParsingServiceManager {
     @Autowired
     SeparatorMapper separatorMapper;
+    @Autowired
+    SiteToWordCreator siteToWordCreator;
 
     public ParseUrlOutput parseUrl(ParseUrlInput parseUrlInput) throws IOException {
         //TODO 1: add logging with start and end messages
@@ -28,7 +31,7 @@ public class ParsingServiceManager {
 
         List<String> words = new ArrayList<>();
         for (String s : pageText) {
-            Arrays.asList(s.split(pattern)).forEach(words::add);
+            words.addAll(List.of((s.split(pattern))));
         }
 
         Set<String> distinctWords = new HashSet<>(words);
@@ -38,6 +41,7 @@ public class ParsingServiceManager {
             return new ParsedWord(word, count);
         }).collect(Collectors.toList());
 
+        siteToWordCreator.create(parsedWords, url);
 
         return new ParseUrlOutput(parsedWords);
     }
